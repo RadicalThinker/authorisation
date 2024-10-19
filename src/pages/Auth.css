@@ -1,0 +1,22 @@
+.left-a{
+    border-radius:0% 40% 40% 0% / 10% 50% 50% 10%;
+}
+
+.left-b{
+    border-radius: 40% 0% 0% 40% / 50% 10% 10% 50% ;
+}
+
+@media (max-width: 768px) {
+    .login-box{
+        display: block;
+    } 
+    .geekroom{
+        height: 20%;
+        width: 100%;
+        border-radius: 0%;
+    }
+    .signin{
+        width: 100%;
+        height: 70%;
+        }
+}
