@@ -16,9 +16,9 @@ const Home = () => {
           <img src={GeekRoom} alt="geekroom" className='' />
           <nav className='flex'>
             <ul className="flex space-x-4 ">
-              <li><a href="#" className="hover:text-gray-300">Home</a></li>
-              <li><a href="#" className="hover:text-gray-300">Categories</a></li>
-              <li><a href="#" className="hover:text-gray-300">About</a></li>
+              <li><span  className="hover:text-gray-300">Home</span></li>
+              <li><span  className="hover:text-gray-300">Categories</span></li>
+              <li><span  className="hover:text-gray-300">About</span></li>
               <li><button onClick={handleLogout} className=' bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 '>Logout</button></li>
             </ul>
 
@@ -46,8 +46,8 @@ const Home = () => {
               Dive into a world of coding, tech, hackathons and more!
             </motion.p>
             <div className="space-x-4">
-              <a href="#" className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200">Get Started</a>
-              <a href="#" className="border border-white px-6 py-2 rounded hover:bg-white hover:text-black">Learn More</a>
+              <span  className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200">Get Started</span>
+              <span  className="border border-white px-6 py-2 rounded hover:bg-white hover:text-black">Learn More</span>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Home = () => {
                 >
                   <h3 className="text-xl font-semibold mb-2">{category}</h3>
                   <p className="text-gray-600 mb-4">Explore the latest in {category.toLowerCase()}</p>
-                  <a href="#" className="text-blue-600 hover:underline">Learn more →</a>
+                  <span  className="text-blue-600 hover:underline">Learn more →</span>
                 </motion.div>
               ))}
             </div>

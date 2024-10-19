@@ -33,19 +33,10 @@ const SignIn = ({onclick}) => {
     signInWithPopup(auth, googleprovider)
     .then((result) => {
       // This gives you a Google Access Token. You can use it to access the Google API.
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-      // The signed-in user info.
-      const user = result.user;
+      console.log(result)
       // ...
     }).catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // The email of the user's account used.
-      const email = error.customData.email;
-      // The AuthCredential type that was used.
-      const credential = GoogleAuthProvider.credentialFromError(error);
+      console.log(error)
 
     });
   }
@@ -65,7 +56,7 @@ const SignIn = ({onclick}) => {
             <label htmlFor="remember" className='text-sm md:text-base'>Remember me</label>   
             </div>
             <div>
-              <a className='text-blue-800 hover:text-blue-500 text-sm md:text-base' href="">Forget Password?</a>
+              <span className='text-blue-800 hover:text-blue-500 text-sm md:text-base' >Forget Password?</span>
             </div>
             
           </div>
@@ -81,7 +72,7 @@ const SignIn = ({onclick}) => {
               <img src={google} onClick={handleGoogle} alt="google" className='w-1/12 grayscale hover:cursor-pointer hover:grayscale-0'/>
             </div>
             
-          <span className='flex items-center justify-center'>Don't have an account?<a  onClick={onclick} className='text-blue-800 hover:text-blue-500 pl-1 hover:cursor-pointer'>Sign Up</a></span>
+          <span className='flex items-center justify-center'>Don't have an account?<span  onClick={onclick} className='text-blue-800 hover:text-blue-500 pl-1 hover:cursor-pointer'>Sign Up</span></span>
         </div>
 
 
