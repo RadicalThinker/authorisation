@@ -15,7 +15,7 @@ export const FirebaseProvider = (props) => {
     }
     const SigninUser = (email , password) => {
         signInWithEmailAndPassword(Firebaseauth,email, password).then((value) => console.log(value))
-        .catch((error) => console.log(error))
+        .catch(() => alert("invalid credentials"))
     }
 
     const SetData = (key, data) => {

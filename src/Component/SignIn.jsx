@@ -17,7 +17,9 @@ const SignIn = ({onclick}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     firebase.SigninUser(email , password)
-  }
+      
+    }
+
 
   const handleChange = (e) => {
     const {id , value} = e.target
