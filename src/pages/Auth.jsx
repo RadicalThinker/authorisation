@@ -8,7 +8,7 @@ const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className='h-screen bg-zinc-800 min-w-screen flex flex-col justify-center items-center'>
+    <div className='h-screen bg-zinc-800 min-w-screen flex flex-col justify-center items-center p-3'>
         <div className='h-full md:h-5/6 w-5/6 flex  bg-white rounded-2xl login-box md:overflow-hidden'>
           {isLogin ?<>
             <motion.div 
