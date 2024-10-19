@@ -9,7 +9,7 @@ const Auth = () => {
 
   return (
     <div className='h-screen bg-zinc-800 min-w-screen flex flex-col justify-center items-center'>
-        <div className='h-5/6 w-5/6 flex flexwra bg-white rounded-2xl login-box overflow-hidden'>
+        <div className='h-full md:h-5/6 w-5/6 flex  bg-white rounded-2xl login-box md:overflow-hidden'>
           {isLogin ?<>
             <motion.div 
               initial={{x:500,
@@ -51,7 +51,7 @@ const Auth = () => {
             }}
             
             key={1}
-            className='right-a md:w-3/6 p-3 md:pl-10'>
+            className='right-a h-[90%] md:w-3/6 p-3 md:pl-10'>
               <SignUp onclick={() => setIsLogin(true)}/>
             </motion.div>
             <motion.div
